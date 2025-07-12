@@ -144,8 +144,7 @@ tasks:
           --machine-type e2-standard-2 \
           --num-nodes 2 \
           --gateway-api=standard \
-          --workload-pool={{.GCP_PROJECT_ID}}.svc.id.goog
-
+          --workload-pool=maximal-run-461910-j3.svc.id.goog   # <--- Changed here
   gcp:07-create-all:
     cmds:
       - task: gcp:02-enable-apis
